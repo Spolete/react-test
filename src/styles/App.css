@@ -5,7 +5,6 @@
 }
 
 #root {
-  background-color: rgb(51, 51, 51);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +17,8 @@
 .post {
   display: flex;
   padding: 15px;
-  border: 2px solid teal;
+  border: 2px solid rgb(14, 120, 190);
+  border-radius: 20px;
   margin-top: 15px;
   justify-content: space-between;
   align-items: center;
@@ -50,7 +50,7 @@
 
 .page {
   padding: 10px;
-  border: 1px solid teal;
+  border: 1px solid rgb(14, 120, 190);
   cursor: pointer;
 }
 
@@ -64,18 +64,24 @@
   width: 100vw;
   display: flex;
   align-items: center;
-  padding: 0 15px;
-  background: lightgray;
+  padding: 15px;
 }
 
 .navbar__links {
-  margin-left: auto;
+  margin: 0 auto;
 }
 
-input {
-  background-color: #323;
+.navbar__link {
+  margin: 0 5px;
+  padding: 5px 15px;
+  text-decoration: none;
+  border: 2px solid rgb(14, 120, 190);
+  border-radius: 10px;
+  color: rgb(14, 120, 190);
 }
 
-button {
-  background-color: #323;
+.navbar__link:hover {
+  color: white;
+  border: 1px solid rgb(14, 120, 190);
+  background-color: rgb(14, 120, 190);
 }

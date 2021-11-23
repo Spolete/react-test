@@ -60,9 +60,9 @@ function Posts() {
 
   return (
     <div className="App">
-      <button onClick={fetchPosts}>GET POSTS</button>
+      {/* <button onClick={fetchPosts}>GET POSTS</button> */}
       <MyButton style={{ marginTop: 30 }} onClick={() => setModal(true)}>
-        Создать пользователя
+        Создать пост
       </MyButton>
       <MyModal visible={modal} setVisible={setModal}>
         <PostForm create={createPost} />
